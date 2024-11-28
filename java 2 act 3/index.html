@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>a basic calculator</h1>
+        <button type="button" style="background-color: aqua; color: red;" onclick="sum()">sum</button> 
+        <p id="result1"></p>
+        <br>
+        <button type="button" style="background-color: rgb(39, 176, 230); color: rgb(22, 21, 21);" onclick="diff()">difference</button> 
+        <p id="result2"></p>
+        <br>
+        <button type="button" style="background-color: rgb(15, 221, 50); color: rgb(231, 218, 26);" onclick="multiply()">multiplication</button> 
+        <p id="result3"></p>
+        <br>
+        <button type="button" style="background-color: rgb(31, 32, 31); color: rgb(252, 252, 251);" onclick="divide()">division</button> 
+        <p id="result4"></p>
+        <br>
+        <script>
+            var a = 8;
+            var b= 2;
+
+            function sum() {
+                document.getElementById("result1").innerHTML =a+b;
+            }
+            function diff() {
+                document.getElementById("result2").innerHTML =a-b;
+            }
+            function multiply() {
+                document.getElementById("result3").innerHTML =a*b;
+            }
+            function divide() {
+                document.getElementById("result4").innerHTML =a/b;
+            }
+        </script>
+    </center>
+</body>
+</html>
